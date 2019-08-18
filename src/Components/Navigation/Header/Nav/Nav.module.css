@@ -72,6 +72,7 @@ padding-left: 1.4em;
   z-index: 100;
   padding-right: 5px;
   font-size: 0.7em;
+  font-weight: bold;
 }
 
 #navIcon1{
@@ -104,11 +105,11 @@ padding-left: 1.4em;
 }
 
 #navIcon1 span:nth-child(2) {
-  top: 5px;
+  top: 6px;
 }
 
 #navIcon1 span:nth-child(3) {
-  top: 10px;
+  top: 12px;
 }
 
  #navIcon1.open span:nth-child(1) {

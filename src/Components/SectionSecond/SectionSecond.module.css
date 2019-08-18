@@ -39,7 +39,7 @@
 
 
 .Images{
-    padding: 1em;
+    padding: 1em 0;
 }
 
 @media(min-width: 768px){
