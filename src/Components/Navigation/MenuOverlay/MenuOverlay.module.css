@@ -1,0 +1,33 @@
+.MainMenu li a{
+
+ color: white;
+ text-decoration: none;
+}
+.MainMenu{
+ padding:0;
+}
+
+.MainMenu li{
+ list-style-type:none;
+}
+
+.Primary li a{
+ font-size: 2.3em;
+ font-family: 'Open Sans';
+ font-weight: normal;
+}
+
+.Primary li{
+ padding: .7em 0;
+}
+
+.Secondary li a{
+ color: white;
+ font-weight: normal;
+ font-size: 1.2em;
+}
+
+.Secondary li{
+ list-style-type:none;
+ padding: .4em 0;
+}

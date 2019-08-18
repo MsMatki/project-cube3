@@ -1,0 +1,65 @@
+.Form input, textarea{
+ width: 100%;
+ border: none;
+ border-bottom: 1px solid rgb(192, 192, 192);
+ margin: 1em 0;
+ 
+}
+
+.Form{
+ padding: 3em 0 1em 0;
+}
+
+.Form textarea{
+   height: 30px;
+}
+
+.Submit{
+ display: flex;
+ justify-content: center;
+
+}
+
+.Submit button{
+ border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  
+}
+
+.Submit button span{
+
+ font-weight: bold;
+ font-size: 1.8em;
+ margin-bottom: 5px;
+
+}
+
+.Form h6, h5{
+  font-weight: normal;
+}
+
+.Form h6{
+ font-size: 0.75em;
+}
+.Form h5{
+ font-size: 1em;
+}
+.Form hr{
+ border: none;
+ background-color: black;
+ margin:0 0 1em 0;
+ height: 1px;
+}
+input::placeholder{
+ color: rgb(192, 192, 192);
+}
+
+textarea::placeholder{
+ color: rgb(192, 192, 192);
+}

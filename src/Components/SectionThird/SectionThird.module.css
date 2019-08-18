@@ -1,0 +1,92 @@
+.SectionThird{
+ margin: 80px 0;
+ overflow: hidden;
+}
+
+
+.Content{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   width: 100%;
+   text-align: left;
+}
+
+.Heading{
+ display: flex;
+ flex-direction: row;
+}
+.Heading h4{
+    width: 150px;
+}
+
+.Border{
+  width: 40px;
+  border: none;
+  background-color: black;
+  margin:1em 3px 0 0;
+  height: 1px;
+}
+
+.Text{
+ font-size: .75em;
+ color: rgb(120, 120, 120);
+ margin-top: 3px;
+}
+
+.Dropdown{
+ display: grid;
+ grid-template-columns: repeat(7, 1fr);
+ border-bottom: 1px solid rgb(197, 197, 197);
+ padding: 0.5em 0;
+ align-items: center;
+}
+
+.Last{
+ border:none;
+}
+
+.Dropdown h6{
+ font-family: 'Open Sans';
+ font-size: 1.2em;
+ grid-column: 1 / 4;
+ justify-self: start;
+}
+
+.Dropdown span{
+ font-weight: bold;
+ font-size: 1.8em;
+ grid-column: 7/7;
+ justify-self: end;
+ margin-bottom: 4px;
+}
+
+.Dropdown h6, p{
+  margin:0;
+}
+.Dropdown p{
+ font-size: 0.7em;
+ grid-column: 4/5;
+ justify-self: start;
+ margin-top: 5px;
+}
+
+.Background img{
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+
+
+
+/* ====================== @media desktop ==================== */
+
+@media(min-width: 768px){
+ .Content{
+  flex-direction: row;
+}
+
+.Text{
+ margin-left:1em;
+}
+}

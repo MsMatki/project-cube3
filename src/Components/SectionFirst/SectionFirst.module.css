@@ -1,0 +1,66 @@
+.SectionFirst{
+ padding: 50px 0;
+ overflow: hidden;
+}
+
+.HeroImage img{
+ width: 100%;
+ height: auto;
+ padding: 3em 0 0 0;
+}
+
+.Headings h1{
+ padding-left: .4em;
+ font-family: 'Open Sans';
+ font-size: 3.3em;
+ padding-top: 0.4em;
+}
+
+.Headings h5{
+ display: flex;
+    width: 230px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+    color: grey;
+    
+}
+
+.Headings h5:before{
+    content: '';
+    border-top: 1px solid;
+    margin: 10px 5px 0 0;
+    flex: 1 0 20px;
+}
+
+.Text{
+ font-size: .75em;
+ color: grey;
+}
+
+.Expand{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1em 0;
+   }
+   
+   .Expand span{
+    font-weight: bold;
+    font-size: 1.8em;
+    margin: 0 0 5px 10px;
+   }
+   
+   .Expand h6{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin:0;
+    font-weight: bold;
+   }
+
+   @media(min-width: 1200px){
+    .Headings h1{
+        font-size: 3.5em;
+       }
+   }

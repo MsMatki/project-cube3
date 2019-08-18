@@ -1,0 +1,8 @@
+.Header{
+ height: 65px;
+ width: 100%;
+
+ position: fixed;
+ z-index: 1000;
+
+}

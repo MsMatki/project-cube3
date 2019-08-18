@@ -1,0 +1,66 @@
+.SectionFourth{
+ padding: 3em 0;
+ overflow: hidden;
+}
+
+.SectionFourth h2{
+ font-size: 2.3em;
+ margin: 0.5em 0 1em 0;
+}
+
+.FancyLine{
+ border-left: 1px solid black;
+  height: 100px;
+  
+}
+
+.Image img{
+ width: 100%;
+ height: auto;
+ margin-top: 3em;
+}
+
+@media(min-width: 768px){
+ .Image img{
+  margin-top:0;
+ }
+}
+
+.Grid{
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   text-align: left;
+   margin-top: 1.5em;
+}
+
+.hr{
+   grid-column: 1/2;
+   width: 50px;
+   border: none;
+   background-color: black;
+   margin: .5em 0 0 0;
+   height: 1px;
+}
+
+.Content{
+ grid-column: 3/13;
+ 
+}
+
+.Content p{
+ font-size: 0.75em;
+}
+
+.Content p:last-child{
+ text-transform: uppercase;
+ font-size: 0.55em;
+}
+
+.Content h4{
+ margin-bottom:0;
+ font-size: 1.9em;
+}
+
+
+/* Form */
+
