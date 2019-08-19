@@ -4,8 +4,8 @@
  flex-direction: column;
 justify-content: space-between;
 align-items: center;
-flex-grow: 1;
  height: 100%;
+ padding-bottom:20px;
 }
 
 .Images img{
@@ -39,7 +39,7 @@ flex-grow: 1;
 :global .slick-dots li {
  width: 35px;
  height: 6px;
- margin-left: 15px;
+ margin:0 0 0 20px;
 }
 
 :global .slick-dots li.slick-active button:before{

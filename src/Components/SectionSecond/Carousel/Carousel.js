@@ -3,6 +3,10 @@ import img1 from "../../../Assets/arhitectureCarpet.png";
 import img2 from "../../../Assets/bookCasualFashion.png";
 import img3 from "../../../Assets/apartmentArchitecture.png";
 import img4 from "../../../Assets/apartmentArhitecture2.png";
+import img5 from "../../../Assets/arhitectureHome.png";
+import img6 from "../../../Assets/apartment-dining.png";
+import img7 from "../../../Assets/apartment-living.png";
+import img8 from "../../../Assets/apartment-kitchen.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import classes from "./Carousel.module.css";
@@ -27,11 +31,11 @@ export class Carousel extends Component {
           }
         },
         {
-          breakpoint: 576,
+          breakpoint: 499,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: true
+            slidesToScroll: 1
+        
           }
         }
       ]
@@ -70,17 +74,17 @@ export class Carousel extends Component {
               </div>
 
               <div className={classes.Images}>
-                <img src={img1} alt="" />
+                <img src={img5} alt="" />
               </div>
 
               <div className={classes.Images}>
-                <img src={img2} alt="" />
+                <img src={img6} alt="" />
               </div>
 
               <div className={classes.Images}>
-                <img src={img3} alt="" />
+                <img src={img7} alt="" />
 
-                <img src={img4} alt="" />
+                <img src={img8} alt="" />
               </div>
             </Slider>
             <div className={classes.Caption}>
