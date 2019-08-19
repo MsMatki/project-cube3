@@ -29,44 +29,6 @@
 
 
 
-.ImageWrap{
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- height: 100%;
-}
-
-
-
-.Images{
-    padding: 1em 0;
-}
-
-@media(min-width: 768px){
-    .Images{
-        padding: 0;
-    }
-}
-
-.Images img{
-   width:100%;
-   height: 100%;
-   
-}
-.Caption{
-    box-sizing: border-box;
-}
-.Caption span{
-    display: inline-block;
-    background-color: rgb(210, 210, 210);
-    height: 5px;
-    width: 30px;
-    margin-left: 15px;
-}
-
-.Caption span:first-child{
-    background-color: black;
-}
 
 .Expand{
  display: flex;

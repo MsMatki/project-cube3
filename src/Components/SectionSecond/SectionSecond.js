@@ -1,12 +1,13 @@
-import React, {Fragment} from "react";
+import React, {Component, Fragment} from "react";
 import classes from "./SectionSecond.module.css";
-import img1 from "../../Assets/arhitectureCarpet.png";
-import img2 from "../../Assets/bookCasualFashion.png";
-import img3 from "../../Assets/apartmentArchitecture.png";
-import img4 from "../../Assets/apartmentArhitecture2.png";
+import Carousel from './Carousel/Carousel'
 import { Spring } from "react-spring/renderprops";
 
-const SectionSecond = props => {
+
+class SectionSecond extends Component{
+
+  render(){
+
   return (
     <section className={classes.SectionSecond}>
       <div className="container ">
@@ -14,7 +15,7 @@ const SectionSecond = props => {
           immediate={window.innerWidth < 768}
           from={{ opacity: 0, transform: "translateX(-200px)" }}
           to={
-            props.active[1]
+            this.props.active[1]
               ? { opacity: 1, transform: "translateX(0)" }
               : { opacity: 0 }
           }
@@ -46,56 +47,11 @@ const SectionSecond = props => {
             </div>
           )}
         </Spring>
-        <Spring
-          immediate={window.innerWidth < 768}
-          from={{ opacity: 0, transform: "translateY(50px)" }}
-          to={
-            props.active[2]
-              ? { opacity: 1, transform: "translateX(0)" }
-              : { opacity: 0 }
-          }
-          config={{ mass: 1, tension: 280, friction: 80 }}
-        >
-          {props => (
-            <Fragment>
-            <div className="row mt-5 mb-4 slideIn" style={window.innerWidth > 768 ? props : null}>
-              <div className="col-sm-12 col-md-4 col-lg-4">
-                <div className={classes.Images}>
-                  <img src={img1} alt="" />
-                </div>
-              </div>
-              <div className="col-sm-12 col-md-4 col-lg-4">
-                <div className={classes.Images}>
-                  <img src={img2} alt="" />
-                </div>
-              </div>
-              <div className="col-sm-12 col-md-4 col-lg-4">
-                <div className={classes.ImageWrap}>
-                  <div className={classes.Images}>
-                    <img src={img3} alt="" />
-                  </div>
-                  <div className={classes.Images}>
-                    <img src={img4} alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row justify-content-end text-right" style={window.innerWidth > 768 ? props : null}>
-              <div className="col-sm-12 col-md-12-col-lg-12">
-                <div className={classes.Caption}>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-            </div>
-            </Fragment>
-          )}
-        </Spring>
+        <Carousel active={this.props.active}/>       
       </div>
     </section>
   );
+          }
 };
 
 export default SectionSecond;

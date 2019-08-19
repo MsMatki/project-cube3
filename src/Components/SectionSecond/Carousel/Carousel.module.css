@@ -1,0 +1,70 @@
+
+.Images{
+ display: flex !important;
+ flex-direction: column;
+justify-content: space-between;
+align-items: center;
+flex-grow: 1;
+ height: 100%;
+}
+
+.Images img{
+   width:100%;
+   height: auto;
+}
+
+.Caption span{
+    width: 100%;
+    margin-left: 15px;
+}
+
+:global .slick-dots{
+ display: flex !important;
+ justify-content: flex-end;
+}
+
+:global .slick-dots li button:before{
+ content: "";
+ background-color: black;
+ width: 100%;
+ height: 100%;
+
+}
+
+:global .slick-dots li button{
+ width: 100%;
+ height: 100%;
+}
+
+:global .slick-dots li {
+ width: 35px;
+ height: 6px;
+ margin-left: 15px;
+}
+
+:global .slick-dots li.slick-active button:before{
+ opacity: 1;
+ 
+} 
+
+:global .slick-dots li button:hover:before {
+ opacity: 0.5;
+}
+
+:global .slick-slide {
+  margin: 0 15px;
+}
+
+:global .slick-list {
+  margin: 0 -15px;
+}
+
+:global .slick-track{
+ height: 100%;
+ display: flex;
+}
+
+:global .slick-track .slick-slide{
+ display: flex;
+ height: auto;
+}
