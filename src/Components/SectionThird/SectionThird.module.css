@@ -48,7 +48,7 @@
 
 .Dropdown h6{
  font-family: 'Open Sans';
- font-size: 1.2em;
+ font-size: 1.1em;
  grid-column: 1 / 4;
  justify-self: start;
 }
@@ -67,7 +67,7 @@
 .Dropdown p{
  font-size: 0.7em;
  grid-column: 4/5;
- justify-self: start;
+ justify-self: end;
  margin-top: 5px;
 }
 
@@ -89,4 +89,14 @@
 .Text{
  margin-left:1em;
 }
+
+.Dropdown h6{
+  font-size: 1.2em;
+  grid-column: 1 / 4;
+
+ }
+
+ .Dropdown p{
+  justify-self: start;
+ }
 }

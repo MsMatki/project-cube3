@@ -20,11 +20,6 @@
  margin-top: 3em;
 }
 
-@media(min-width: 768px){
- .Image img{
-  margin-top:0;
- }
-}
 
 .Grid{
    display: grid;
@@ -58,9 +53,20 @@
 
 .Content h4{
  margin-bottom:0;
- font-size: 1.9em;
+ font-size: 1.6em;
 }
 
 
-/* Form */
+@media(min-width: 768px){
+   .Image img{
+    margin-top:0;
+   }
+
+   .Content h4{
+      margin-bottom:0;
+      font-size: 1.9em;
+     }
+
+  }
+
 
